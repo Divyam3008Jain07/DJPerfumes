@@ -1,0 +1,366 @@
+<html>
+
+<head>
+    <title>
+        DJ Perfumes
+    </title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+#container{
+    height: 100%;
+    width: 200px;
+    background-color: black;
+    position: fixed;
+    left: -200px;
+    transition: all 0.4s ease-in-out;
+    top: 0px;
+}
+#container ul a {
+    color: magenta;
+    font-size: 22px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 130px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0px 0px 6px magenta;
+  
+}
+li:hover{
+background-color: black;
+border: magenta 10px solid;
+text-shadow: 0px 0px 0px magenta;
+
+
+}
+#container li {
+    transition: all 0.5s ease-out;
+}
+#open{
+    font-size: 40px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    text-shadow: 0px 0px 10px magenta;
+    color: magenta;
+    
+}
+#close{
+    font-size: 40px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    text-shadow: 0px 0px 10px magenta;
+    color: white;
+}
+body{
+    background-color: black;
+}
+*{
+                margin : 0px ; 
+                padding : 0px ;
+           } 
+           .navbar ul a:active{background-color: black;  font-size: 100px;}
+           .navbar{
+               height : 50px ; 
+               background-color: black ;
+           }
+            .navbar ul{
+                list-style: none ;
+                /* display : flex ;  */
+            }
+            .navbar ul li{
+                float : left ; 
+                padding : 0px 20px ; 
+                line-height: 50px ;
+                color : white ; 
+                font-size: 18px ;
+                transition : all 0.3s ;
+            }
+            .navbar ul li:hover{
+                font-size: 20px ;
+                background-color: rgb(29, 27, 27);
+                text-shadow: 0px 0px 3px magenta;
+                border-bottom : magenta 3px solid ; 
+            }
+            .navbar h1{
+                color : white ;
+                float : right;
+                margin-right : 20px;
+                transition: all 1s;
+            }
+            .navbar img{
+                float: right;
+                width : 50px ; 
+                height : 50px ; 
+            }
+ ul li.active{
+    background-color: white;
+}
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+#fn{
+   float: right;
+   width: 40px;
+   height: 40px;
+   background-color: rgb(255, 0, 170);
+   position: sticky;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  background-color: rgba(0,0,0);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  background-color: rgba(0,0,0);
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: blue;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: magenta;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+h1{
+    color: magenta;
+    font-size: 40px ;
+    text-align: center;
+    text-shadow: 0px 0px 4px magenta;
+}
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 90%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.example button {
+  float: left;
+  width: 10%;
+  height: 6.5%;
+  background: hotpink;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0000;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.header{
+    height : 400px ; 
+    border : magenta 4px solid ; 
+    background-color: black;
+}
+.content1{
+    border : black 3px solid ; 
+    display: flex ;
+    justify-content: space-evenly;
+    background-color: black;
+}
+
+.content1 .items{
+    width : 250px ; 
+    height: 300px ;
+    border : magenta 5px solid ; 
+    background-color: black;
+}
+
+.content2{
+    height : 350px ;
+    border : magenta 5px solid ; 
+    display : flex ; 
+    background-color: black;
+}
+
+.left{
+    height : 100% ; 
+    width : 30% ;
+    border : black 2px solid ; 
+    background-color: black;
+}
+.right{
+    height : 100% ; 
+    width : 70% ;
+    border: black 2px solid ;
+    background-color: black;
+}   
+
+.footer{
+    border : black 4px solid  ; 
+    background-color: black;
+    height : 200px ; 
+}
+
+
+
+    </style>
+</head>
+
+<body>
+    <form class="example" action="action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit">🔍<i class="fa fa-search"></i></button>
+      </form>
+    <button onclick="myFunction()" id="fn">💡</button>
+    <button id="open" onclick="show()">☰</button>
+<div id="container">
+    <button id="close" onclick="hide()">X</button>
+    <ul>
+        <a href="home.html" class="link"><li class="li">Home</li></a>
+        <a href="men.html" class="link"><li class="li">Men</li></a>
+        <a href="women.html" class="link"><li class="li">Women</li></a>
+        <a href="about.html" class="link"><li class="li">About us</li></a>
+    </ul>
+    <div class="test">
+    </div>
+</div>
+<div class="content1">
+    <div class="items"><img src="m1.jpg" style="height: 100%; width: 100%;"></div>
+    <div class="items"><img src="m2.jpg" style="height: 100%; width: 100%;"></div>
+    <div class="items"><img src="m3.jpg" style="height: 100%; width: 100%;"></div>
+</div>
+
+<div class="content2">
+    <div class="left"><img src="m4.jpg" style="height: 100%; width: 100%;"></div>
+    <div class="right" style= "color: magenta; font-size: 300px; text-align: center;">$150</div>
+</div>
+
+
+<div class="content2">
+    <div class="right" style="color: magenta; font-size: 300px; text-align: center;">$69</div>
+    <div class="left"><img src="m5.jpg" style="height: 100%; width: 100%;" ></div>
+</div>
+
+<div class="footer">
+    
+</div>
+
+    <script>
+function show(){
+document.getElementById("container").style.left = '0px'
+}
+function hide(){
+document.getElementById("container").style.left = '-200px'
+}
+var li = document.getElementsByClassName("li")
+            var a = document.getElementsByClassName("link")
+            var currFile = location.href
+            
+            for(var i = 0 ; i< a.length ; i++){
+                if(a[i].href == currFile){
+                    li[i].classList.add("active")
+                }
+            }
+            function myFunction() {
+       var element = document.body;
+       element.classList.toggle("dark-mode");
+    }
+   
+    </script>
+</body>
+
+</html>

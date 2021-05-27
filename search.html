@@ -1,0 +1,182 @@
+<html>
+
+<head>
+    <title>
+        Side Bar
+    </title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+#container{
+    height: 100%;
+    width: 200px;
+    background-color: black;
+    position: fixed;
+    left: -200px;
+    transition: all 0.4s ease-in-out;
+    top: 0px;
+}
+#container ul a {
+    color: magenta;
+    font-size: 22px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 130px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0px 0px 6px magenta;
+  
+}
+li:hover{
+background-color: black;
+border: magenta 10px solid;
+text-shadow: 0px 0px 0px magenta;
+
+
+}
+#container li {
+    transition: all 0.5s ease-out;
+}
+#open{
+    font-size: 40px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    text-shadow: 0px 0px 10px magenta;
+    color: white;
+}
+#close{
+    font-size: 40px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    text-shadow: 0px 0px 10px magenta;
+    color: white;
+}
+body{
+    background-color: black;
+}
+*{
+                margin : 0px ; 
+                padding : 0px ;
+           } 
+           .navbar ul a:active{background-color: gold;  font-size: 100px;}
+           .navbar{
+               height : 50px ; 
+               background-color: black ;
+           }
+            .navbar ul{
+                list-style: none ;
+                /* display : flex ;  */
+            }
+            .navbar ul li{
+                float : left ; 
+                padding : 0px 20px ; 
+                line-height: 50px ;
+                color : white ; 
+                font-size: 18px ;
+                transition : all 0.3s ;
+            }
+            .navbar ul li:hover{
+                font-size: 20px ;
+                background-color: rgb(29, 27, 27);
+                text-shadow: 0px 0px 3px gold;
+                border-bottom : red 3px solid ; 
+            }
+            .navbar h1{
+                color : white ;
+                float : right;
+                margin-right : 20px;
+                transition: all 1s;
+            }
+            .navbar img{
+                float: right;
+                width : 50px ; 
+                height : 50px ; 
+            }
+ ul li.active{
+    background-color: white;
+}
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 90%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.example button {
+  float: left;
+  width: 10%;
+  height: 6.5%;
+  background: #008cff;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+    </style>
+</head>
+
+<body>
+    <form class="example" action="action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit">🔍<i class="fa fa-search"></i></button>
+      </form>
+<a href="DJ Perfumes"></a>
+
+<br>
+    
+    <div id="loader">     </div>
+
+    <button id="open" onclick="show()">☰</button>
+<div id="container">
+    <button id="close" onclick="hide()">X</button>
+    <ul>
+        <a href="home.html" class="link"><li class="li">Home</li></a>
+        <a href="men.html" class="link"><li class="li">Men</li></a>
+        <a href="women.html" class="link"><li class="li">Women</li></a>
+        <a href="about.html" class="link"><li class="li">About us</li></a>
+        <a href="search.html" class="link"><li class="li">Search</li></a>
+    </ul>
+    <div class="test">
+    </div>
+</div>
+
+    <script>
+function show(){
+document.getElementById("container").style.left = '0px'
+}
+function hide(){
+document.getElementById("container").style.left = '-200px'
+}
+var li = document.getElementsByClassName("li")
+            var a = document.getElementsByClassName("link")
+            var currFile = location.href
+            
+            for(var i = 0 ; i< a.length ; i++){
+                if(a[i].href == currFile){
+                    li[i].classList.add("active")
+                }
+            }
+    </script>
+</body>
+
+</html>
